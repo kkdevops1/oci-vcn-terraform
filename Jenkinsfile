@@ -13,7 +13,7 @@ pipeline {
         stage("Checkout Git Repository") {
             steps {
                 script {
-                    git branch: 'main', credentialsId: 'your-git-credentials-id', url: 'https://github.com/kkdevops1/oci-vcn-terraform.git'
+                    git branch: 'master', url: 'https://github.com/kkdevops1/oci-vcn-terraform.git'
                 }
             }
         }
