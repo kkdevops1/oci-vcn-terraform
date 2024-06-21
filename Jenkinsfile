@@ -40,7 +40,22 @@ pipeline {
                     sh 'terraform apply -auto-approve tfplan'
                 }
             }
+
         }
+   
+       stage("Terraform destory"){
+
+            steps {
+                  
+                script {
+                      sh 'terraform destory -auto-approve'
+                     }
+                   }
+                  }
+                               
+ 
+
+
     }
 }
 
